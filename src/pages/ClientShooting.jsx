@@ -1,11 +1,10 @@
 import React from 'react';
-import Menushka from "../components/Menushka/Menushka";
 
 const ClientShooting = () => {
     return (
-        <>
-            Page Client
-        </>
+        <div>
+            <h1>Client</h1>
+        </div>
     )
 }
 
