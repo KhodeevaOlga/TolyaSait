@@ -13,11 +13,11 @@ const Menushka = ({header, items, active, setActive}) => {
                 <div className='menu_content' onClick={e => e.stopPropagation()}>
                 <div className='menu_header'>{header}</div>
               <ul>
-                  {items.map(item =>
+                 {/* {items.map(item =>
                   <li>
                       <a href={item.href}>{item.value}</a>
                   </li>
-                  )}
+                  )}*/}
               </ul>
                 </div>
             </div>

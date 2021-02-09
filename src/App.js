@@ -6,54 +6,36 @@ import {BrowserRouter as Router, Link, NavLink, Route, Switch} from "react-route
 import Editorial from './pages/Editorial'
 import ClientShooting from "./pages/ClientShooting";
 import ModelTests from "./pages/ModelTests";
-import { createBrowserHistory } from "history";
-
 
 
 function App() {
-    const history = createBrowserHistory();
     const [menuActive, setMenuActive] = useState(false)
-    const items = [{value: 'Editorial', href: '/editorial'}, {
-        value: 'Client Shooting',
-        href: '/clientShooting'
-    }, {value: 'Model tests', href: '/modelTests'}]
+    const items = [
+        {value: 'Editorial', href: '/editorial'},
+        {value: 'Client Shooting', href: '/clientShooting'},
+        {value: 'Model tests', href: '/modelTests'}
+        ]
 
     return (
 
         <div className='app'>
             {/*<div className='App-header'>*/}
-        {/*    <NavLink to='/editorial'>
+            {/*    <NavLink to='/editorial'>
                 <div
                     className='burger-btn'
                     onClick={() => setMenuActive(!menuActive)}>
                 </div>
             </NavLink>*/}
-
+            hfghfghfgh
 
             <main></main>
 
 
-        {/*компонента Менюшка*/}
-        <Menushka active={menuActive} setActive={setMenuActive} header={''} items={items}/>
+            {/*компонента Менюшка*/}
+            <Menushka active={menuActive} setActive={setMenuActive} header={''} items={items}/>
 
-    {/*<Router>*/}
-    {/*    <Switch>*/}
-    {/*        <Route path='/editorial' component={Editorial}/>*/}
-    {/*        <Route path='/clientShooting' component={ClientShooting}/>*/}
-    {/*        <Route path='/modelTests' component={ModelTests}/>*/}
-    {/*        <div>*/}
-    {/*        </div>*/}
-
-    {/*    </Switch>*/}
-    {/*</Router>*/}
-
-            ReactDOM.render(
-            <Router history={history}>
-                <App />
-            </Router>,
-            node
-            );
-</div>
-)}
+        </div>
+    )
+}
 
 export default App;
